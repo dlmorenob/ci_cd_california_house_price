@@ -116,7 +116,7 @@ try:
     print(f"🔍 MSE del modelo: {rmse:.4f} (umbral: {THRESHOLD})")
 
     # Validación
-    if mse <= THRESHOLD:
+    if rmse <= THRESHOLD:
         print(" El modelo cumple los criterios de calidad.")
         sys.exit(0)
     else:
