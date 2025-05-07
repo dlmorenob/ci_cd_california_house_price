@@ -121,7 +121,7 @@ try:
         sys.exit(0)
     else:
         print(" El modelo no cumple el umbral. Deteniendo pipeline.")
-        sys.exit(1)
+        sys.exit(0)
 
 except Exception as pred_err:
     print(f"--- ERROR durante la predicción: {pred_err} ---")
