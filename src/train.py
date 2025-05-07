@@ -79,7 +79,8 @@ if experiment_id is None:
 #################################################################################
 #################################################################################
 # --- Cargar Datos y Entrenar Modelo ---
-df = pd.read_csv("../data/housing.csv")
+#df = pd.read_csv("../data/housing.csv")
+df = pd.read_csv("data/housing.csv")
 #print(df.head(),df.shape)
 
 print("revisando valores nulos")
