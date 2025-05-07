@@ -112,8 +112,8 @@ print("--- Debug: Realizando predicciones ---")
 try:
     y_pred1 = model.predict(X_test)
     y_pred  = y_pred1
-    mse = mean_squared_error(y_test, y_pred)
-    print(f"🔍 MSE del modelo: {mse:.4f} (umbral: {THRESHOLD})")
+    rmse = root_mean_squared_error(y_test, y_pred)
+    print(f"🔍 MSE del modelo: {rmse:.4f} (umbral: {THRESHOLD})")
 
     # Validación
     if mse <= THRESHOLD:
