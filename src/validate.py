@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 import sys
 import os
+import numpy as np 
 
 # Parámetro de umbral
 THRESHOLD = 30000.0
