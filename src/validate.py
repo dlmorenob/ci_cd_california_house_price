@@ -2,13 +2,16 @@ print("Entra a validate.py")
 import mlflow
 import pandas as pd
 from sklearn.metrics import mean_squared_error
+from sklearn.metrics import root_mean_squared_error
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_diabetes
 import sys
 import os
 
 # Parámetro de umbral
-THRESHOLD = 5000.0
+THRESHOLD = 30000.0
 
 # --- Configurar MLflow igual que en train.py ---
 workspace_dir = os.getcwd()
