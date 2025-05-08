@@ -82,7 +82,7 @@ print("--- Debug: Intentando cargar modelo desde MLflow ---")
 print("--- Debug: Intentando cargar modelo desde MLflow ---")
 
 try:
-    experiment_name = "github-mlops-californiaHousing"
+    experiment_name = "github-mlops-californiaHousing"  
     experiment = mlflow.get_experiment_by_name(experiment_name)
     
     if experiment is None:
